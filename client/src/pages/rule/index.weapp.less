@@ -1,0 +1,66 @@
+.rule {
+    width           : 100vw;
+    max-width       : 800px;
+    height          : 100vh;
+    margin          : 0 auto;
+    position        : relative;
+    background-image: linear-gradient(#e2e2e2 4px, transparent 0), linear-gradient(90deg, #e2e2e2 4px, transparent 0);
+    background-size : 45px 45px, 45px 45px;
+
+    .back {
+        width     : 3.75%;
+        height    : 2.6%;
+        position  : absolute;
+        left      : 84.75%;
+        top       : 4.4%;
+        background: url(../../static/rule/back.png) center / contain no-repeat;
+        animation : bounceIn 1s;
+        z-index: 999;
+    }
+
+    .decoration {
+        width   : 71.25%;
+        height  : 70%;
+        position: absolute;
+        top     : 4.7%;
+        left    : 9.375%;
+        background: url(../../static/rule/decoration.png) center / contain no-repeat;
+        animation: bounce 1s;
+
+    }
+
+    .rule-text {
+        width   : 93.75vw;
+        height  : 64.5vh;
+        position: absolute;
+        top     : 0;
+        left    : 0;
+        bottom  : 0;
+        right   : 0;
+        margin  : auto;
+        background: url(../../static/rule/rule.png) center / contain no-repeat;
+        animation: bounceIn 1s;
+
+    }
+
+    .rule-title {
+        width     : 57.5vw;
+        height    : 6.956vh;
+        position  : absolute;
+        left      : 0;
+        right     : 0;
+        margin    : auto;
+        margin-top: 16.48vh;
+        background: url(../../static/home/rule.png) center / cover no-repeat;
+        animation: bounceInDown 1s;
+    }
+
+    .runman {
+        width     : 100%;
+        height    : 10%;
+        position  : absolute;
+        left      : 0;
+        bottom    : 0;
+        background: url(../../static/running_man.gif) center / cover no-repeat;
+    }
+}

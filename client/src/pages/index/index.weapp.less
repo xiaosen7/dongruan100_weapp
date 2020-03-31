@@ -1,0 +1,76 @@
+.home {
+    width    : 100vw;
+    max-width: 800px;
+    height   : 100vh;
+    margin   : 0 auto;
+
+    position        : relative;
+    background-image: linear-gradient(#e2e2e2 4px, transparent 0), linear-gradient(90deg, #e2e2e2 4px, transparent 0);
+    background-size : 45px 45px, 45px 45px;
+
+    .wrapper {
+        width          : 100%;
+        height         : 50%;
+        background     : url(../../static/home/logo.png) center bottom;
+        background-repeat: no-repeat;
+        background-size: 150%;
+        animation      : bounceInDown 1s;
+    }
+
+    .menu {
+        display        : flex;
+        height         : 36%;
+        width          : 100%;
+        flex-direction : column;
+        justify-content: space-around;
+        align-items    : center;
+        position       : absolute;
+        left           : 0;
+        bottom         : 5vh;
+        z-index        : 999;
+
+        .menu-item {
+            width     : 57.5%;
+            height    : 25%;
+            transition: all .2s;
+        }
+
+        .menu-item:active {
+            transform: scale(0.9);
+        }
+
+        .menu-item:nth-of-type(1) {
+            background: url(../../static//home/time_mode.png) center / contain no-repeat;
+        }
+
+        .menu-item:nth-of-type(2) {
+            background: url(../../static//home/survive_mode.png) center /contain no-repeat;
+        }
+
+        .menu-item:nth-of-type(3) {
+            background: url(../../static//home/rule.png) center /contain no-repeat;
+        }
+
+        .menu-item:nth-of-type(4) {
+            background: url(../../static//home/view-ranking.png) center /contain no-repeat;
+        }
+
+        .menu-item:nth-of-type(odd) {
+            animation: bounceInLeft 1s;
+        }
+
+        .menu-item:nth-of-type(even) {
+            animation: bounceInRight 1s;
+        }
+
+    }
+
+    .runman {
+        width     : 100%;
+        height    : 10%;
+        position  : absolute;
+        left      : 0;
+        bottom    : 0;
+        background: url(../../static/running_man.gif) center / cover no-repeat;
+    }
+}

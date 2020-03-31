@@ -1,0 +1,109 @@
+.rank {
+    width    : 100vw;
+    max-width: 800px;
+    height   : 100vh;
+    margin   : 0 auto;
+    position : relative;
+    background: url(../../static/rank/bg.png) center / contain no-repeat,
+        linear-gradient(#e2e2e2 4px, transparent 0) center / 45px 45px repeat,
+        linear-gradient(90deg, #e2e2e2 4px, transparent 0) center / 45px 45px repeat;
+
+    .back {
+        width     : 3.75%;
+        height    : 2.6%;
+        position  : absolute;
+        left      : 84.75%;
+        top       : 4.4%;
+        background: url(../../static/rule/back.png) center / contain no-repeat;
+        animation : bounceIn 1s;
+        z-index: 999;
+    }
+
+    .decoration {
+        width     : 90.25vw;
+        height    : 90vh;
+        position  : absolute;
+        top       : 1vw;
+        left      : 1vh;
+        background: url(../../static/rank/decoration.png) 0 0 / cover no-repeat;
+        animation : swing 2s ease-out;
+
+    }
+
+    .rank-title {
+        width     : 27.125%;
+        height    : 5.234vh;
+        position  : absolute;
+        left      : 0;
+        right     : 0;
+        margin    : auto;
+        margin-top: 6.875vh;
+        background: url(../../static/rank/rank-title.png) center / contain no-repeat;
+        animation : bounceInDown 1s;
+    }
+
+    .rank-banner {
+        width          : 55.75%;
+        height         : 71.5%;
+        position       : absolute;
+        top            : 0;
+        bottom         : 0;
+        left           : 0;
+        right          : 0;
+        margin         : auto;
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: space-around;
+        color: #333;
+        .rank-time,
+        .rank-survive {
+            width: 100%;
+
+            .rank-list {
+                width : 100%;
+                height: 24.4375vh;
+
+                .rank-list-item {
+                    width        : 100%;
+                    height       : 6.1vh;
+                    margin-bottom: 2.1vh;
+                    overflow: hidden;
+                    .avatar {
+                        width        : 9.75vw;
+                        height       : 9.75vw;
+                        border-radius: 50%;
+                        background   : url(../../static/rank/avatar.png) center / cover no-repeat;
+                        float: left;
+                    }
+
+                    .name {
+                        width     : 46vw;
+                        height    : 100%;
+                        text-align: center;
+                        line-height: 6vh;
+                        background: url(../../static/rank/name.png) center / cover no-repeat;
+                        float: right;
+                    }
+                }
+            }
+        }
+
+        .rank-time-title {
+            width     : 25vw;
+            height    : 3.59375vh;
+            background: url(../../static/rank/rank-time-title.png)center / contain no-repeat;
+            margin    : 0 auto;
+            animation : bounceInLeft 1s;
+        }
+
+        .rank-survive-title {
+            width     : 25vw;
+            height    : 3.515625vh;
+            background: url(../../static/rank/rank-survive-title.png)center / contain no-repeat;
+            margin    : 0 auto;
+            animation : bounceInRight 1s;
+        }
+    }
+
+}

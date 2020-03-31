@@ -1,0 +1,58 @@
+.gameover {
+    width     : 100vw;
+    max-width : 800px;
+    height    : 100vh;
+    margin    : 0 auto;
+    background: url(../../static/gameover/gameover.png) left top / 100% 100% no-repeat;
+    position  : relative;
+
+    .score {
+        position   : absolute;
+        width      : 17%;
+        height     : 6.1vh;
+        left       : 58%;
+        top        : 29vh;
+        font-size  : 60px;
+        text-align : center;
+        line-height: 6.1vh;
+
+    }
+
+    .menu {
+        width         : 100%;
+        height        : 50vh;
+        position      : absolute;
+        bottom        : 0;
+        display       : flex;
+        flex-wrap     : wrap;
+        flex-direction: column;
+        align-items   : center;
+
+        .menu-item {
+            width        : 57.5%;
+            height       : 8.4375vh;
+            margin-bottom: 3vh;
+            transition   : all .2s;
+        }
+
+        .menu-item:active {
+            transform: scale(0.9);
+        }
+
+        .restart {
+            background: url(../../static/gameover/restart.png) center / contain no-repeat;
+        }
+
+        .home {
+            background: url(../../static/gameover/home.png) center / contain no-repeat;
+        }
+
+        .share {
+            background: url(../../static/gameover/share.png) center / contain no-repeat;
+        }
+
+        .rank {
+            background: url(../../static/gameover/rank.png) center / contain no-repeat;
+        }
+    }
+}

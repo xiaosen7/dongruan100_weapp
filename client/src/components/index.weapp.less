@@ -1,0 +1,119 @@
+.game {
+    width    : 100vw;
+    max-width: 800px;
+    height   : 100vh;
+    margin   : 0 auto;
+    position : relative;
+    background: url(../static/game/decoration-building.png) 0 90% / contain no-repeat,
+        linear-gradient(#e2e2e2 4px, transparent 0) center / 45px 45px repeat,
+        linear-gradient(90deg, #e2e2e2 4px, transparent 0) center / 45px 45px repeat;
+
+    .sun {
+        width     : 11.8%;
+        height    : 6.25vh;
+        position  : absolute;
+        top       : 7vh;
+        right     : 10vw;
+        background: url(../static/game/sun.png) center / contain no-repeat;
+        animation : rotate 1s linear infinite;
+        animation-play-state: paused;
+    }
+
+    .sun.play {
+        animation-play-state: running;
+    }
+
+    .count {
+        width        : 16.375vw;
+        height       : 16.375vw;
+        background   : url(../static/game/border.png) center / contain no-repeat;
+        border-radius: 50%;
+        top          : 8vh;
+        left         : 18vw;
+        position     : absolute;
+        line-height  : 16.375vw;
+        text-align   : center;
+        font-size    : larger;
+        animation    : rubberBand 2s;
+    }
+
+    .game-wrapper {
+        width          : 69.875%;
+        height         : 70.71875vh;
+        position       : absolute;
+        left           : 0;
+        right          : 0;
+        top            : 0;
+        bottom         : 0;
+        margin         : auto;
+        display        : flex;
+        justify-content: space-between;
+        flex-wrap      : wrap;
+
+        .question-banner {
+            width   : 100%;
+            height  : 39.765625vh;
+            position: relative;
+
+            .question-banner-item {
+                position: absolute;
+                left    : 0;
+                top     : 0;
+                width   : 100%;
+                height  : 100%;
+            }
+
+            .buildings {
+                background: url(../static/game/building.png) center / contain no-repeat;
+            }
+
+            .question-border {
+                background: url(../static/game/question-border.png) center / contain no-repeat;
+            }
+
+            .decoration {
+                background: url(../static/game/decoration.png) center / contain no-repeat;
+            }
+        }
+
+        .choice {
+            width          : 100%;
+            display        : flex;
+            align-items    : space-around;
+            justify-content: space-around;
+            height         : 24vh;
+            flex-wrap      : wrap;
+
+            .choice-item {
+                width   : 40.05%;
+                height  : 10vh;
+                position: relative;
+
+                .choice-item-bg {
+                    width : 100%;
+                    height: 100%;
+                }
+
+                .choice-item-tap {
+                    width   : 87%;
+                    height  : 71%;
+                    position: absolute;
+                    right   : 0;
+                    left    : 0;
+                    top     : 0;
+                    margin  : auto;
+                }
+
+                .choice-item-tap.selected-right {
+                    outline: 3px solid #0f0;
+                }
+
+                .choice-item-tap.selected-wrong {
+                    outline: 3px solid #f00;
+                }
+
+            }
+
+        }
+    }
+}
